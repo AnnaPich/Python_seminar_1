@@ -1,16 +1,12 @@
-# This is a sample Python script.
+# Задача 1
+# За день машина проезжает n километров. Сколько дней нужно, чтобы проехать m километров.
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+n = int(input("Введите расстояние,которое машина проезжает за 1 день в км: "))
 
+m = int(input("Введите расстояние, которе необходимо проехать: "))
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+# print(f"Длительность поездки составит: {m//n} дней")
 
+duration = (m + n - 1) // n
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+print(f"Длительность поездки составит: {duration} дней")
