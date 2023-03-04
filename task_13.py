@@ -16,6 +16,7 @@
 n = int(input("Enter quantity days: "))
 sum_days = 0
 i = 0
+max_days = 0
 # while i <= n:
 from random import randint
 
@@ -24,8 +25,14 @@ for i in range(n):
     print(f"day_temperature: {day_temperature}")
     if day_temperature > 0:
         sum_days += 1
-    elif i == n and sum_days != 0:
-        print(sum_days)
+        if sum_days > max_days:
+            max_days = sum_days
     else:
-        print(sum_days)
         sum_days = 0
+print(f"Maximum number of thaw days: {max_days}")
+    # elif i == n and sum_days != 0:
+    #     print(sum_days)
+    # else:
+    #     print(sum_days)
+    #     sum_days = 0
+
