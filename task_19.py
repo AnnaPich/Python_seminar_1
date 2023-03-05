@@ -11,6 +11,7 @@ list_1 = [randint(0, 9) for i in range(n)]
 print(list_1)
 
 for i in range(k):
-    temp = list_1.pop() # псследний элемент списка
-    list_1.insert(0,temp) # добавление элемента temp на позицию 0
+    # temp = list_1.pop() # псследний элемент списка
+    # list_1.insert(0,temp) # добавление элемента temp на позицию 0
+    list_1.insert(0, list_1.pop())
 print(list_1)
