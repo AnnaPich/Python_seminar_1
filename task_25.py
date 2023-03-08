@@ -7,11 +7,17 @@ text = input("Enter a text: ")
 
 text_1 =set(text)
 
-for i in range(len(text_1)):
-    simbol = text[i]
-    count = 0
-    for k in range(len(text)):
-        if text[k] == simbol:
-            count += 1
-    print(f"{simbol}_{count}")
+# for i in range(len(text_1)):
+#     simbol = text[i]
+#     count = 0
+#     for k in range(len(text)):
+#         if text[k] == simbol:
+#             count += 1
+#     print(f"{simbol}_{count}")
 
+for i in text_1:
+    count = 0
+    for k in text:
+        if k == i:
+            count += 1
+    print(f"{i}_{count}")
