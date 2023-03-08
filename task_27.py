@@ -7,11 +7,27 @@
 
 text = input("Enter a text: ")
 
-simbol = " "
-count = 1
+# Вариант 1
+# simbol = " "
+# word = list()
+# words_array = list()
+#
+# for i in range(len(text)):
+#     if text[i] != simbol:
+#         word.append(text[i])
+#     else:
+#         words_array.append(word)
+#         word = list()
+#     if i == len(text) - 1:
+#         words_array.append(word)
+#
+# print(words_array)
+# print(len(words_array))
 
-for i in text:
-    if i == simbol:
-        count += 1
+# Вариант 2
 
-print(f"In the text is {count} words")
+words_array = set(text.lower().split())
+
+print(f'{words_array} -> {len(words_array)}')
+
+
